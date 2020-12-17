@@ -1,17 +1,13 @@
-a, b, c = input().split()
-if(int(a) %2 == 0 and int(b) %2 == 0 and int(c) %2 == 0):
-    print("NO")
-elif(int(a) %2 != 0 and int(b) %2 != 0 and int(c) %2 != 0):
-    print("NO")
-elif(int(a) %2 == 0 and int(b) %2 != 0 and int(c) %2 != 0):
-    print("YES")
-elif(int(a) %2 == 0 and int(b) %2 == 0 and int(c) %2 != 0):
-    print("YES")
-elif(int(a) %2 == 0 and int(b) %2 != 0 and int(c) %2 == 0):
-    print("YES")
-elif(int(a) %2 != 0 and int(b) %2 == 0 and int(c) %2 == 0):
-    print("YES")
-elif(int(a) %2 != 0 and int(b) %2 != 0 and int(c) %2 == 0):
-    print("YES")
-elif(int(a) %2 != 0 and int(b) %2 == 0 and int(c) %2 != 0):
-    print("YES")
+k=[int(i) for i in input().split()]
+a=0
+b=0
+for i in k:
+    if i%2==0:
+        a+=1
+    elif i%2!=0:
+        b+=1
+if a>0 and b>0:
+    print('YES')
+else:
+    print('NO')
+    
